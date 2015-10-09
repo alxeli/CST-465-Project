@@ -12,22 +12,31 @@ namespace CST_465_Project
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            uxEventOutput.Text += "OnLoad, ";
+            if (Page.IsPostBack)
+            {
+                uxIsPostBack.Text += "PostedBack<br />";
+            }
         }
         
         protected void Page_Init(object sender, EventArgs e)
         {
-            uxIsPostBack.Text = "Posted Back";
+            uxEventOutput.Text = "OnInit<br />";
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            uxEventOutput.Text += "OnPreRender, ";
+            uxEventOutput.Text += "OnPreRender<br />";
         }
 
         protected void uxSubmit_Click(object sender, EventArgs e)
         {
-
+            uxEventOutput.Text += "Submitted: " 
+                + uxName.Text + " "
+                + uxHobby.Text + " "
+                + uxBiography.Text + " "
+                + uxCoursePrefix.Text + " " 
+                + uxCourseNumber.Text + " " 
+                + uxCourseDescription.Text + "<br />";
         }
     }
 }

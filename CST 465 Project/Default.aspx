@@ -11,21 +11,26 @@
     <div>
         <asp:Label ID="lblName" AssociatedControlID="uxName" runat="server" Text="Name"></asp:Label>
         <asp:TextBox ID="uxName" runat="server"></asp:TextBox>
+        <br />
 
         <asp:Label ID="lblUserType" AssociatedControlID="uxUserType" runat="server" Text="UserType"></asp:Label>
         <asp:DropDownList ID="uxUserType" AutoPostBack="true" runat="server">
             <asp:ListItem>Student</asp:ListItem>
             <asp:ListItem>Faculty/Staff</asp:ListItem>
         </asp:DropDownList>
+        <br />
 
         <asp:Label ID="lblHobby" AssociatedControlID="uxHobby" runat="server" Text="Hobby"></asp:Label>
         <asp:TextBox ID="uxHobby" runat="server"></asp:TextBox>
+        <br />
 
         <asp:Label ID="lblBand" AssociatedControlID="uxBand" runat="server" Text="Band"></asp:Label>
         <asp:TextBox ID="uxBand" runat="server"></asp:TextBox>
+        <br />
 
         <asp:Label ID="lblBiography" AssociatedControlID="uxBiography" runat="server" Text="Biography"></asp:Label>
         <asp:TextBox ID="uxBiography" TextMode="MultiLine" runat="server"></asp:TextBox>
+        <br />
 
         <asp:Table ID="uxCourses" runat="server">
             <asp:TableHeaderRow runat="server">
@@ -39,13 +44,18 @@
                 <asp:TableCell><asp:TextBox ID="uxCourseDescription" runat="server"></asp:TextBox></asp:TableCell> 
             </asp:TableRow>
         </asp:Table>
+        <br />
 
         <asp:Label ID="lblSubmit" AssociatedControlID="uxSubmit" runat="server" Text="Save Profile"></asp:Label>
         <asp:Button ID="uxSubmit" OnClick="uxSubmit_Click" runat="server" Text="Submit" />
+        <br />
 
         <asp:Literal ID="uxIsPostBack" runat="server"></asp:Literal>
+        <br />
         <asp:Literal ID="uxFormOutput" runat="server"></asp:Literal>
+        <br />
         <asp:Literal ID="uxEventOutput" runat="server"></asp:Literal>
+        <br />
     </div>
     </form>
 </body>
