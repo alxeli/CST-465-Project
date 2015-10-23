@@ -88,26 +88,42 @@
                 <br />
             </asp:View>
             <asp:View ID="uxSecondView" runat="server">
-                <strong>First Name</strong>
+                <strong>First Name: </strong>
                 <asp:Literal ID="lFirstName" runat="server"></asp:Literal>
                 <br />
 
-                <strong>Last Name</strong>
+                <strong>Last Name: </strong>
                 <asp:Literal ID="lLastName" runat="server"></asp:Literal>
                 <br />
 
-                <strong>Age</strong>
+                <strong>Age: </strong>
                 <asp:Literal ID="lAge" runat="server"></asp:Literal>
                 <br />
 
-                <strong>Phone Number</strong>
+                <strong>Phone Number: </strong>
                 <asp:Literal ID="lPhoneNumber" runat="server"></asp:Literal>
                 <br />
 
-                <strong>Email Address</strong>
+                <strong>Email Address: </strong>
                 <asp:Literal ID="lEmailAddress" runat="server"></asp:Literal>
                 <br />
-                
+
+                <strong>Street Address: </strong>
+                <asp:Literal ID="lStreetAddress" runat="server"></asp:Literal>
+                <br />
+
+                <strong>City: </strong>
+                <asp:Literal ID="lCity" runat="server"></asp:Literal>
+                <br />
+
+                <strong>State: </strong>
+                <asp:Literal ID="lState" runat="server"></asp:Literal>
+                <br />
+
+                <strong>ZipCode: </strong>
+                <asp:Literal ID="lZipcode" runat="server"></asp:Literal>
+                <br />
+
                 <asp:Image ID="uxImage" runat="server" />
                 <br />
             </asp:View>

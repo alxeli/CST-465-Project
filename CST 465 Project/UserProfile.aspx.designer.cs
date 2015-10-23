@@ -382,6 +382,42 @@ namespace CST_465_Project {
         protected global::System.Web.UI.WebControls.Literal lEmailAddress;
         
         /// <summary>
+        /// lStreetAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lStreetAddress;
+        
+        /// <summary>
+        /// lCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lCity;
+        
+        /// <summary>
+        /// lState control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lState;
+        
+        /// <summary>
+        /// lZipcode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lZipcode;
+        
+        /// <summary>
         /// uxImage control.
         /// </summary>
         /// <remarks>
