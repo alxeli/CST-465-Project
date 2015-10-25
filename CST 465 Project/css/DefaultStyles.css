@@ -1,0 +1,43 @@
+﻿/******************************************************************************
+    red1    #E40F23
+    red2    #F97884
+    red3    #FC1329 
+    red4    #99000F 
+    red5    #37171A 
+    blue1   #2C20A4
+    blue2   #756DC5
+    blue3   #3F2EE4
+    blue4   #140B6E
+    blue5   #161428
+    yellow1 #ECC20F
+    yellow2 #FFE67B
+    yellow3 #FFD213
+    yellow4 #9E8000
+    yellow5 #393318
+******************************************************************************/
+
+/******************************************************************************
+    My styling currently looks pretty hideous. I just want you to know that 
+    I am aware of this and plan on fixing it in the near future.
+
+    -Alex
+******************************************************************************/
+
+body {
+
+}
+
+header{
+    color: #37171A;
+    background-color: #E40F23;
+}
+
+#mpMain{
+    color: #2C20A4;
+    background-color: #99000F;
+}
+
+footer{
+    color: #393318;
+    background-color: #ECC20F;
+}

@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BaseTemplate.master.cs" Inherits="CST_465_Project.App_Master.BaseTemplate" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../css/DefaultStyles.css" rel="stylesheet" />
+    <title>Faster Food</title>
+    <asp:ContentPlaceHolder ID="mpHead" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <asp:ContentPlaceHolder ID="mpHeader" runat="server">
+            <h1>Master Page Header Default</h1>
+        </asp:ContentPlaceHolder>
+    </header>
+
+    <nav>
+        <asp:ContentPlaceHolder ID="mpNav" runat="server">
+            <h2>Master Page Nav Default</h2>
+        </asp:ContentPlaceHolder>
+    </nav>
+    
+    <form id="mpForm" runat="server">
+        <!-- I was going to use <main> here but intellisense says "Element 'main' is not supported" -->
+        <div id="mpMain">
+            <asp:ContentPlaceHolder ID="mpContent" runat="server">
+                <h2>Master Page Content Default</h2>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer>
+        <asp:ContentPlaceHolder ID="mpFooter" runat="server">
+            <h2>Master Page Footer Default</h2>
+        </asp:ContentPlaceHolder>
+
+    </footer>
+</body>
+</html>
