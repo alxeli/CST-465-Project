@@ -11,32 +11,33 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <header>
-        <asp:ContentPlaceHolder ID="mpHeader" runat="server">
-            <h1>Master Page Header Default</h1>
-        </asp:ContentPlaceHolder>
-    </header>
-
-    <nav>
-        <asp:ContentPlaceHolder ID="mpNav" runat="server">
-            <h2>Master Page Nav Default</h2>
-        </asp:ContentPlaceHolder>
-    </nav>
-    
-    <form id="mpForm" runat="server">
-        <!-- I was going to use <main> here but intellisense says "Element 'main' is not supported" -->
-        <div id="mpMain">
-            <asp:ContentPlaceHolder ID="mpContent" runat="server">
-                <h2>Master Page Content Default</h2>
+    <div id="main_body">
+        <header id="mpHeader">
+            <asp:ContentPlaceHolder ID="cHeader" runat="server">
+                <h1>Master Page Header Default</h1>
             </asp:ContentPlaceHolder>
-        </div>
-    </form>
+        </header>
 
-    <footer>
-        <asp:ContentPlaceHolder ID="mpFooter" runat="server">
-            <h2>Master Page Footer Default</h2>
-        </asp:ContentPlaceHolder>
+        <nav id="mpNav">
+            <asp:ContentPlaceHolder ID="cNav" runat="server">
+                <h2>Master Page Nav Default</h2>
+            </asp:ContentPlaceHolder>
+        </nav>
+    
+        <form id="mpForm" runat="server">
+            <!-- I was going to use <main> here but intellisense says "Element 'main' is not supported" -->
+            <div id="mpMain">
+                <asp:ContentPlaceHolder ID="cContent" runat="server">
+                    <h2>Master Page Content Default</h2>
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
 
-    </footer>
+        <footer id="mpFooter">
+            <asp:ContentPlaceHolder ID="cFooter" runat="server">
+                <h2>Master Page Footer Default</h2>
+            </asp:ContentPlaceHolder>
+        </footer>
+    </div>
 </body>
 </html>

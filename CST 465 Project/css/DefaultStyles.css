@@ -14,6 +14,7 @@
     yellow3 #FFD213
     yellow4 #9E8000
     yellow5 #393318
+    black   #000000
 ******************************************************************************/
 
 /******************************************************************************
@@ -24,20 +25,85 @@
 ******************************************************************************/
 
 body {
-
+    background-color: #000000;
 }
 
-header{
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*master page***************************************/
+#mpHeader{
     color: #37171A;
     background-color: #E40F23;
+    margin: 0px;
+    padding: 0px;
 }
-
+#mpNav{
+    color: #2C20A4;
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
 #mpMain{
     color: #2C20A4;
     background-color: #99000F;
+    margin: 0px;
+    padding: 0px;
 }
-
-footer{
+#mpFooter{
     color: #393318;
     background-color: #ECC20F;
+    margin: 0px;
+    padding: 0px;
+}
+#main_body {
+    width: 1004px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #756DC5;
+    height: 100%;
+}
+/*controls******************************************/
+.right_label {
+    display: inline-block;
+    text-align: right;
+    width: 10em;
+    padding-top: .4em;
+    padding-left: .4em;
+}
+
+/*textbox*/
+input[type=text] {
+    width: 25px;
+}
+input[type=text].name_textbox {
+    width: 8em;
+}
+input[type=text].age_textbox {
+    width: 2em;
+}
+input[type=text].phone_textbox {
+    width: 7em;
+}
+input[type=text].email_textbox {
+    width: 16em;
+}
+input[type=text].address_textbox {
+    width: 14em;
+}
+
+/*button*/
+input[type=submit] {
+    margin-left: 12.75em;
+    margin-top: 1.5em;
+    padding-left: .4em;
+    padding-right: .4em;
 }

@@ -71,6 +71,9 @@
     <Content Include="404Error.aspx" />
     <Content Include="500Error.aspx" />
     <Content Include="AddTreater.aspx" />
+    <Content Include="Assignment4Test.aspx" />
+    <Content Include="Code\EssayQuestion.ascx" />
+    <Content Include="Code\MultipleChoiceQuestion.ascx" />
     <Content Include="css\DefaultStyles.css" />
     <Content Include="packages.config" />
     <Content Include="App_Master\BaseTemplate.Master" />
@@ -119,7 +122,31 @@
     <Compile Include="App_Master\BaseTemplate.Master.designer.cs">
       <DependentUpon>BaseTemplate.Master</DependentUpon>
     </Compile>
-    <Compile Include="Code\UserProfile.cs" />
+    <Compile Include="Assignment4Test.aspx.cs">
+      <DependentUpon>Assignment4Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assignment4Test.aspx.designer.cs">
+      <DependentUpon>Assignment4Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\EssayQuestion.ascx.cs">
+      <DependentUpon>EssayQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\EssayQuestion.ascx.designer.cs">
+      <DependentUpon>EssayQuestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\ITestQuestion.cs" />
+    <Compile Include="Code\MultipleChoiceQuestion.ascx.cs">
+      <DependentUpon>MultipleChoiceQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\MultipleChoiceQuestion.ascx.designer.cs">
+      <DependentUpon>MultipleChoiceQuestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\ShortTextQuestion.cs" />
+    <Compile Include="Code\TrueFalseQuestion.cs" />
+    <Compile Include="Code\UserProfileObject.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

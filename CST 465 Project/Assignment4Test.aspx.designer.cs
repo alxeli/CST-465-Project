@@ -7,63 +7,72 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CST_465_Project.App_Master {
+namespace CST_465_Project {
     
     
-    public partial class BaseTemplate {
+    public partial class Assignment4Test {
         
         /// <summary>
-        /// mpHead control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder mpHead;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// cHeader control.
+        /// uxEssay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cHeader;
+        protected global::CST_465_Project.Code.EssayQuestion uxEssay;
         
         /// <summary>
-        /// cNav control.
+        /// uxMultipleChoice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cNav;
+        protected global::CST_465_Project.Code.MultipleChoiceQuestion uxMultipleChoice;
         
         /// <summary>
-        /// mpForm control.
+        /// uxShortText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm mpForm;
+        protected global::CST_465_Project.Code.ShortTextQuestion uxShortText;
         
         /// <summary>
-        /// cContent control.
+        /// uxTrueFalse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cContent;
+        protected global::CST_465_Project.Code.TrueFalseQuestion uxTrueFalse;
         
         /// <summary>
-        /// cFooter control.
+        /// uxSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cFooter;
+        protected global::System.Web.UI.WebControls.Button uxSubmit;
+        
+        /// <summary>
+        /// uxResultLiteral control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal uxResultLiteral;
     }
 }

@@ -68,7 +68,8 @@ namespace CST_465_Project
                 
                 if (uxProfileImageUpload.HasFile)
                 {
-                    string base64String = null;
+                    //string base64String = null;
+
                     byte[] buffer = new byte[uxProfileImageUpload.PostedFile.ContentLength];
 
                     //store image into business object

@@ -16,51 +16,51 @@
     </script>
 </asp:Content>
 
-<asp:Content ID="UserProfileHeader" ContentPlaceHolderID="mpHeader" runat="server">
+<asp:Content ID="UserProfileHeader" ContentPlaceHolderID="cHeader" runat="server">
     <h1>User Profile</h1>
 </asp:Content>
 
-<asp:Content ID="UserProfileContent" ContentPlaceHolderID="mpContent" runat="server">
+<asp:Content ID="UserProfileContent" ContentPlaceHolderID="cContent" runat="server">
     <asp:MultiView ID="uxMultiView" ActiveViewIndex="0" runat="server">
         <asp:View ID="uxFirstView" runat="server">
-            <asp:Label ID="lblFirstName" AssociatedControlID="uxFirstName" Text="First Name: " runat="server" />
-            <asp:TextBox ID="uxFirstName" runat="server" />
+            <asp:Label ID="lblFirstName" CssClass="right_label" AssociatedControlID="uxFirstName" Text="First Name: " runat="server" />
+            <asp:TextBox ID="uxFirstName" CssClass="name_textbox" runat="server" />
             <asp:RequiredFieldValidator ID="vFirstName" ControlToValidate="uxFirstName" ErrorMessage="First Name Required" Text="*" runat="server" />
             <br />
 
-            <asp:Label ID="lblLastName" AssociatedControlID="uxLastName" Text="Last Name: " runat="server" />
-            <asp:TextBox ID="uxLastName" runat="server" />
+            <asp:Label ID="lblLastName" CssClass="right_label" AssociatedControlID="uxLastName" Text="Last Name: " runat="server" />
+            <asp:TextBox ID="uxLastName" CssClass="name_textbox" runat="server" />
             <asp:RequiredFieldValidator ID="vLastName" ControlToValidate="uxLastName" ErrorMessage="Last Name Required" Text="*" runat="server" />
             <br />
 
-            <asp:Label ID="lblAge" AssociatedControlID="uxAge" Text="Age: " runat="server" />
-            <asp:TextBox ID="uxAge" runat="server" />
+            <asp:Label ID="lblAge" CssClass="right_label" AssociatedControlID="uxAge" Text="Age: " runat="server" />
+            <asp:TextBox ID="uxAge" CssClass="age_textbox" runat="server" />
             <asp:RangeValidator ID="vAge" ControlToValidate="uxAge" MinimumValue="0" MaximumValue="200" Type="Integer" ErrorMessage="Age must be between 0 and 200" Text="*" runat="server"/>
             <br />
 
-            <asp:Label ID="lblPhoneNumber" AssociatedControlID="uxPhoneNumber" Text="Phone Number: " runat="server" />
-            <asp:TextBox ID="uxPhoneNumber" runat="server" />
+            <asp:Label ID="lblPhoneNumber" CssClass="right_label" AssociatedControlID="uxPhoneNumber" Text="Phone Number: " runat="server" />
+            <asp:TextBox ID="uxPhoneNumber" CssClass="phone_textbox" runat="server" />
             <asp:RequiredFieldValidator ID="vPhoneNumber" ControlToValidate="uxPhoneNumber" ErrorMessage="Phone Number Required" Text="*" runat="server" />
             <br />
 
-            <asp:Label ID="lblEmailAddress" AssociatedControlID="uxEmailAddress" Text="Email Address: " runat="server" />
-            <asp:TextBox ID="uxEmailAddress" runat="server" />
+            <asp:Label ID="lblEmailAddress" CssClass="right_label" AssociatedControlID="uxEmailAddress" Text="Email Address: " runat="server" />
+            <asp:TextBox ID="uxEmailAddress" CssClass="email_textbox" runat="server" />
             <asp:RequiredFieldValidator ID="vEmailAddress" ControlToValidate="uxEmailAddress" ErrorMessage="Email Address Required" Text="*" runat="server" />
             <br />
-            <asp:Label ID="lblConfirmEmailAddress" AssociatedControlID="uxConfirmEmailAddress" Text="Confirm Email Address: " runat="server" />
-            <asp:TextBox ID="uxConfirmEmailAddress" runat="server" />
+            <asp:Label ID="lblConfirmEmailAddress" CssClass="right_label" AssociatedControlID="uxConfirmEmailAddress" Text="Confirm Email Address: " runat="server" />
+            <asp:TextBox ID="uxConfirmEmailAddress" CssClass="email_textbox" runat="server" />
             <asp:CompareValidator ID="vConfirmEmailAddress" ControlToValidate="uxConfirmEmailAddress" ControlToCompare="uxEmailAddress" ErrorMessage="Confirmation Email Address Mismatch" Text="*" runat="server"/>
             <br />
 
-            <asp:Label ID="lblStreetAddress" AssociatedControlID="uxStreetAddress" Text="Street Address: " runat="server" />
-            <asp:TextBox ID="uxStreetAddress" runat="server" />
+            <asp:Label ID="lblStreetAddress" CssClass="right_label" AssociatedControlID="uxStreetAddress" Text="Street Address: " runat="server" />
+            <asp:TextBox ID="uxStreetAddress" CssClass="address_textbox" runat="server" />
             <br />
 
-            <asp:Label ID="lblCity" AssociatedControlID="uxCity" Text="City: " runat="server" />
+            <asp:Label ID="lblCity" CssClass="right_label" AssociatedControlID="uxCity" Text="City: " runat="server" />
             <asp:TextBox ID="uxCity" runat="server" />
             <br />
 
-            <asp:Label ID="lblState" AssociatedControlID="uxState" Text="State: " runat="server" />
+            <asp:Label ID="lblState" CssClass="right_label" AssociatedControlID="uxState" Text="State: " runat="server" />
             <asp:dropdownlist ID="uxState" runat="server">
                 <asp:ListItem>Oregon</asp:ListItem>
                 <asp:ListItem>Washington</asp:ListItem>
@@ -68,17 +68,17 @@
             </asp:dropdownlist>
             <br />
 
-            <asp:Label ID="lblZipcode" AssociatedControlID="uxZipcode" Text="Zipcode: " runat="server" />
+            <asp:Label ID="lblZipcode" CssClass="right_label" AssociatedControlID="uxZipcode" Text="Zipcode: " runat="server" />
             <asp:TextBox ID="uxZipcode" runat="server" />
             <asp:RegularExpressionValidator ID="vZipcode" ControlToValidate="uxZipcode" ValidationExpression="\d{5}(\-\d{4})?" ErrorMessage="Invalid Zipcode" Text="*" runat="server" />
             <br />
 
-            <asp:Label ID="lblProfileImageUpload" AssociatedControlID="uxProfileImageUpload" Text="Profile Image: " runat="server" />
+            <asp:Label ID="lblProfileImageUpload" CssClass="right_label" AssociatedControlID="uxProfileImageUpload" Text="Profile Image: " runat="server" />
             <asp:FileUpload ID="uxProfileImageUpload" runat="server" />
             <asp:CustomValidator ID="vProfileImageUpload" ControlToValidate="uxProfileImageUpload" 
                 OnServerValidate="vProfileImageUpload_ServerValidate" ClientValidationFunction="validateFile" ErrorMessage="Wrong Image Format" Text="*" runat="server" />
             <br />
-
+            
             <asp:Button ID="uxSaveProfile" Text="Save Profile" runat="server" OnClick="uxSaveProfile_Click" />
             <br />
 
