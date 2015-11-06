@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="App_Master/BaseTemplate.Master" CodeBehind="UserProfile.aspx.cs" Inherits="CST_465_Project.UserProfile" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/App_Master/BaseTemplate.Master" CodeBehind="UserProfile.aspx.cs" Inherits="CST_465_Project.UserProfile" %>
 
 <asp:Content ID="UserProfileHead" ContentPlaceHolderID="mpHead" runat="server">
     <title>User Profile</title>

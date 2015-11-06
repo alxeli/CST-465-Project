@@ -11,33 +11,36 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div id="main_body">
-        <header id="mpHeader">
-            <asp:ContentPlaceHolder ID="cHeader" runat="server">
-                <h1>Master Page Header Default</h1>
-            </asp:ContentPlaceHolder>
-        </header>
+    <form id="mpForm" runat="server">
+        <div id="main_body">
+            <header id="mpHeader">
+                <asp:ContentPlaceHolder ID="cHeader" runat="server">
+                    <h1>Master Page Header Default</h1>
+                </asp:ContentPlaceHolder>
+                <div id="login_status">                    
+                    <asp:LoginStatus ID="uxLoginStatus" runat="server"/>
+                </div>
+            </header>
 
-        <nav id="mpNav">
-            <asp:ContentPlaceHolder ID="cNav" runat="server">
-                <h2>Master Page Nav Default</h2>
-            </asp:ContentPlaceHolder>
-        </nav>
+            <nav id="mpNav">
+                <asp:ContentPlaceHolder ID="cNav" runat="server">
+                    <h2>Master Page Nav Default</h2>
+                </asp:ContentPlaceHolder>
+            </nav>
     
-        <form id="mpForm" runat="server">
             <!-- I was going to use <main> here but intellisense says "Element 'main' is not supported" -->
             <div id="mpMain">
                 <asp:ContentPlaceHolder ID="cContent" runat="server">
                     <h2>Master Page Content Default</h2>
                 </asp:ContentPlaceHolder>
             </div>
-        </form>
 
-        <footer id="mpFooter">
-            <asp:ContentPlaceHolder ID="cFooter" runat="server">
-                <h2>Master Page Footer Default</h2>
-            </asp:ContentPlaceHolder>
-        </footer>
-    </div>
+            <footer id="mpFooter">
+                <asp:ContentPlaceHolder ID="cFooter" runat="server">
+                    <h2>Master Page Footer Default</h2>
+                </asp:ContentPlaceHolder>
+            </footer>
+        </div>
+    </form>
 </body>
 </html>

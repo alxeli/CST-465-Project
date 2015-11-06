@@ -52,7 +52,7 @@ h2 {
     padding: 0px;
 }
 #mpMain{
-    color: #2C20A4;
+    color: #FFFFFF;
     background-color: #99000F;
     margin: 0px;
     padding: 0px;
@@ -70,6 +70,7 @@ h2 {
     margin-bottom: 0px;
     background-color: #756DC5;
     height: 100%;
+    position: relative;
 }
 /*controls******************************************/
 .right_label {
@@ -79,10 +80,15 @@ h2 {
     padding-top: .4em;
     padding-left: .4em;
 }
+#login_status {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
 
 /*textbox*/
 input[type=text] {
-    width: 25px;
+    width: 10em;
 }
 input[type=text].name_textbox {
     width: 8em;
@@ -98,6 +104,11 @@ input[type=text].email_textbox {
 }
 input[type=text].address_textbox {
     width: 14em;
+}
+.blog_textbox {
+    margin-top: 1em;
+    height: 20em;
+    width: 25em;
 }
 
 /*button*/

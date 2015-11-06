@@ -7,72 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CST_465_Project.App_Master {
+namespace CST_465_Project.Admin {
     
     
-    public partial class BaseTemplate {
+    public partial class UserManagement {
         
         /// <summary>
-        /// mpHead control.
+        /// lblRoles control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder mpHead;
+        protected global::System.Web.UI.WebControls.Label lblRoles;
         
         /// <summary>
-        /// mpForm control.
+        /// uxRoles control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm mpForm;
+        protected global::System.Web.UI.WebControls.ListBox uxRoles;
         
         /// <summary>
-        /// cHeader control.
+        /// lblRoleName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cHeader;
+        protected global::System.Web.UI.WebControls.Label lblRoleName;
         
         /// <summary>
-        /// uxLoginStatus control.
+        /// uxRoleNameBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginStatus uxLoginStatus;
+        protected global::System.Web.UI.WebControls.TextBox uxRoleNameBox;
         
         /// <summary>
-        /// cNav control.
+        /// uxAddRole control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cNav;
-        
-        /// <summary>
-        /// cContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cContent;
-        
-        /// <summary>
-        /// cFooter control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cFooter;
+        protected global::System.Web.UI.WebControls.Button uxAddRole;
     }
 }
