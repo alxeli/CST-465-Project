@@ -15,7 +15,7 @@ namespace CST_465_Project
 
         protected void Page_Init(object sender, EventArgs e)
         {
-            
+            //something   
         }
 
         protected void Page_Load(object sender, EventArgs e)
