@@ -24,7 +24,17 @@
 
             <nav id="mpNav">
                 <asp:ContentPlaceHolder ID="cNav" runat="server">
-                    <h2>Master Page Nav Default</h2>
+                    <asp:SiteMapDataSource ID="dsSiteMap" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" runat="server" />
+                    <asp:Menu ID="uxMenu" DataSourceID="dsSiteMap" Orientation="Horizontal" BackColor="Transparent" RenderingMode="List" runat="server">
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="#ECC20F" ForeColor="#2C20A4" />
+                        <StaticSelectedStyle BackColor="#ECC20F" />
+                        <DynamicHoverStyle BackColor="red" ForeColor="#2C20A4" />
+                        <DynamicMenuStyle BackColor="red"  ForeColor="#756DC5"/>
+                        <DynamicSelectedStyle BackColor="Transparent" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    </asp:Menu>
+                    <asp:SiteMapPath ID="uxSiteMapPath" PathSeparator=" -_- " BackColor="Transparent" runat="server" />
                 </asp:ContentPlaceHolder>
             </nav>
     

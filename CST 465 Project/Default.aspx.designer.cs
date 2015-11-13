@@ -10,16 +10,7 @@
 namespace CST_465_Project {
     
     
-    public partial class Default {
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+    public partial class Default1 {
         
         /// <summary>
         /// lblName control.
@@ -184,13 +175,13 @@ namespace CST_465_Project {
         protected global::System.Web.UI.WebControls.Literal uxIsPostBack;
         
         /// <summary>
-        /// uxFormOutput  control.
+        /// uxFormOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal uxFormOutput ;
+        protected global::System.Web.UI.WebControls.Literal uxFormOutput;
         
         /// <summary>
         /// uxEventOutput control.

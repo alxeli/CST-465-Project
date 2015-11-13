@@ -46,8 +46,8 @@ h2 {
     padding: 0px;
 }
 #mpNav{
+    display:inline-block;
     color: #2C20A4;
-    background-color: #FFFFFF;
     margin: 0px;
     padding: 0px;
 }
@@ -117,4 +117,10 @@ input[type=submit] {
     margin-top: 1.5em;
     padding-left: .4em;
     padding-right: .4em;
+}
+
+[href$="_SkipLink"] {
+    position:absolute;
+    left: -1000px;
+
 }

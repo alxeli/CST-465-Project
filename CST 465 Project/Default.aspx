@@ -1,13 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CST_465_Project.Default" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/App_Master/BaseTemplate.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CST_465_Project.Default1" %>
+<asp:Content ID="Content4" ContentPlaceHolderID="cContent" runat="server">
     <div>
         <asp:Label ID="lblName" AssociatedControlID="uxName" runat="server" Text="Name"></asp:Label>
         <asp:TextBox ID="uxName" runat="server"></asp:TextBox>
@@ -57,6 +49,4 @@
         <asp:Literal ID="uxEventOutput" runat="server"></asp:Literal>
         <br />
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>

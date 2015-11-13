@@ -58,6 +58,33 @@ namespace CST_465_Project.App_Master {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder cNav;
         
         /// <summary>
+        /// dsSiteMap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapDataSource dsSiteMap;
+        
+        /// <summary>
+        /// uxMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Menu uxMenu;
+        
+        /// <summary>
+        /// uxSiteMapPath control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapPath uxSiteMapPath;
+        
+        /// <summary>
         /// cContent control.
         /// </summary>
         /// <remarks>
