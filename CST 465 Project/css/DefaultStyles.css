@@ -42,26 +42,31 @@ h2 {
 #mpHeader{
     color: #37171A;
     background-color: #E40F23;
-    margin: 0px;
-    padding: 0px;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 #mpNav{
     display:inline-block;
     color: #2C20A4;
-    margin: 0px;
-    padding: 0px;
+    padding-top: .25em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 #mpMain{
     color: #FFFFFF;
     background-color: #99000F;
     margin: 0px;
-    padding: 0px;
+    padding-top: 1em;
+    padding-left: 1em;
 }
 #mpFooter{
     color: #393318;
     background-color: #ECC20F;
     margin: 0px;
-    padding: 0px;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 #main_body {
     width: 1004px;
@@ -82,9 +87,11 @@ h2 {
 }
 #login_status {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    font-size: 2em;
+    right: 1em;
+    top: .25em;
 }
+
 
 /*textbox*/
 input[type=text] {

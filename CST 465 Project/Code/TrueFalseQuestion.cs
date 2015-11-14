@@ -15,7 +15,11 @@ namespace CST_465_Project.Code
     public class TrueFalseQuestion : CompositeControl, ITestQuestion
     {
         public string QuestionText { get; set; }
-        public string Answer { get { return m_radio.SelectedItem.Value; } set { m_radio.SelectedItem.Value = value; } }
+        public string Answer 
+        { 
+            get { return (m_radio != null) ? m_radio.SelectedItem.Value : ""; } 
+            set { m_radio.SelectedItem.Value = value; } 
+        }
 
         private Label m_label;
         private RadioButtonList m_radio;

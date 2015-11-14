@@ -73,6 +73,7 @@
     <Content Include="About.aspx" />
     <Content Include="AddTreater.aspx" />
     <Content Include="Admin\UserManagement.aspx" />
+    <Content Include="Answers.html" />
     <Content Include="Assignment4Test.aspx" />
     <Content Include="Blog.aspx" />
     <Content Include="Code\EssayQuestion.ascx" />
@@ -82,6 +83,7 @@
     <Content Include="Customers\Login.aspx" />
     <Content Include="Customers\Register.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="MidtermExam.aspx" />
     <Content Include="packages.config" />
     <Content Include="App_Master\BaseTemplate.Master" />
     <None Include="Web.Debug.config">
@@ -90,7 +92,10 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.sitemap" />
+    <Content Include="Results.aspx" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Defaultb.aspx" />
@@ -175,6 +180,7 @@
     <Compile Include="Code\MultipleChoiceQuestion.ascx.designer.cs">
       <DependentUpon>MultipleChoiceQuestion.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Code\QuestionAnswer.cs" />
     <Compile Include="Code\ShortTextQuestion.cs" />
     <Compile Include="Code\TrueFalseQuestion.cs" />
     <Compile Include="Code\UserProfileObject.cs" />
@@ -216,6 +222,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MidtermExam.aspx.cs">
+      <DependentUpon>MidtermExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MidtermExam.aspx.designer.cs">
+      <DependentUpon>MidtermExam.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -230,6 +243,13 @@
     </Compile>
     <Compile Include="Customers\UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
     </Compile>
     <Compile Include="Support.aspx.cs">
       <DependentUpon>Support.aspx</DependentUpon>

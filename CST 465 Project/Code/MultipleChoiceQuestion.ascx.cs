@@ -9,17 +9,21 @@ namespace CST_465_Project.Code
 {
     public partial class MultipleChoiceQuestion : System.Web.UI.UserControl, ITestQuestion
     {
+        List<ListItem> m_items = new List<ListItem>();
         protected void Page_Init(object sender, EventArgs e)
         {
-            foreach(ListItem item in Items)
-            {
-                uxQuestions.Items.Add(item);
-            }
+            //foreach(ListItem item in Items)
+            //{
+            //    uxQuestions.Items.Add(item);
+            //}
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            foreach (ListItem item in Items)
+            {
+                uxQuestions.Items.Add(item);
+            }
         }
 
         public string QuestionText
@@ -31,14 +35,14 @@ namespace CST_465_Project.Code
         [PersistenceMode(PersistenceMode.InnerProperty)]
         public string Answer
         {
-            get { return uxQuestions.SelectedItem.Value; }
+            get { return (uxQuestions.SelectedItem != null) ? uxQuestions.SelectedItem.Value : ""; }
             set { uxQuestions.SelectedItem.Value = value; }
         }
 
         public List<ListItem> Items
         {
-            get;
-            set;
+            get { return m_items; }
+            set { m_items = value; }
         }
     }
 }

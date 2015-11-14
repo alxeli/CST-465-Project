@@ -60,6 +60,7 @@ namespace CST_465_Project.Code
             //add controls
             Controls.Add(m_label);
             Controls.Add(m_textbox);
+            Controls.Add(new LiteralControl("<br /><br />"));
             Controls.Add(m_validator);
         }
     }
