@@ -86,47 +86,58 @@
             <br />
         </asp:View>
         <asp:View ID="uxSecondView" runat="server">
-            <strong>First Name: </strong>
-            <asp:Literal ID="lFirstName" runat="server"></asp:Literal>
-            <br />
-
-            <strong>Last Name: </strong>
-            <asp:Literal ID="lLastName" runat="server"></asp:Literal>
-            <br />
-
-            <strong>Age: </strong>
-            <asp:Literal ID="lAge" runat="server"></asp:Literal>
-            <br />
-
-            <strong>Phone Number: </strong>
-            <asp:Literal ID="lPhoneNumber" runat="server"></asp:Literal>
-            <br />
-
-            <strong>Email Address: </strong>
-            <asp:Literal ID="lEmailAddress" runat="server"></asp:Literal>
-            <br />
-
-            <strong>Street Address: </strong>
-            <asp:Literal ID="lStreetAddress" runat="server"></asp:Literal>
-            <br />
-
-            <strong>City: </strong>
-            <asp:Literal ID="lCity" runat="server"></asp:Literal>
-            <br />
-
-            <strong>State: </strong>
-            <asp:Literal ID="lState" runat="server"></asp:Literal>
-            <br />
-
-            <strong>ZipCode: </strong>
-            <asp:Literal ID="lZipcode" runat="server"></asp:Literal>
-            <br />
-
-            <asp:Image ID="uxImage" runat="server" />
-            <br />
             
-            <asp:Button ID="uxEditProfile" Text="Edit Profile" runat="server" OnClick="uxEditProfile_Click" />
-            <br />
+            <div class="left_image">
+                <asp:Image ID="uxImage" CssClass="profile_image" runat="server" />
+            </div>
+
+            <div class="inline_div">
+                <br />
+                <strong class="literal_label">First Name: </strong>
+                <asp:Literal ID="lFirstName" runat="server"></asp:Literal>
+                <br />
+
+                <strong class="literal_label">Last Name: </strong>
+                <asp:Literal ID="lLastName" runat="server"></asp:Literal>
+                <br />
+
+                <strong class="literal_label">Age: </strong>
+                <asp:Literal ID="lAge" runat="server"></asp:Literal>
+                <br />
+
+                <strong class="literal_label">Phone Number: </strong>
+                <asp:Literal ID="lPhoneNumber" runat="server"></asp:Literal>
+                <br />
+
+                <strong class="literal_label">Email Address: </strong>
+                <asp:Literal ID="lEmailAddress" runat="server"></asp:Literal>
+                <br />
+
+                <strong class="literal_label">Street Address: </strong>
+                <asp:Literal ID="lStreetAddress" runat="server"></asp:Literal>
+                <br />
+
+                <strong class="literal_label">City: </strong>
+                <asp:Literal ID="lCity" runat="server"></asp:Literal>
+                <br />
+
+                <strong class="literal_label">State: </strong>
+                <asp:Literal ID="lState" runat="server"></asp:Literal>
+                <br />
+
+                <strong class="literal_label">ZipCode: </strong>
+                <asp:Literal ID="lZipcode" runat="server"></asp:Literal>
+                <br />
+
+                <asp:Button ID="uxEditProfile" Text="Edit Profile" runat="server" OnClick="uxEditProfile_Click" />
+                <br />
+                <br />
+            </div>
+<%--
+            <div class="right_image">
+                <asp:Image ID="uxImage" CssClass="profile_image" runat="server" />
+            </div>--%>
+            
         </asp:View>
     </asp:MultiView>
     <br />

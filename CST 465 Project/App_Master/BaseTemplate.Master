@@ -50,7 +50,7 @@
 
             <footer id="mpFooter">
                 <asp:ContentPlaceHolder ID="cFooter" runat="server">
-                    <h2>Master Page Footer Default</h2>
+                    <a>FasterFood™</a>
                 </asp:ContentPlaceHolder>
             </footer>
         </div>

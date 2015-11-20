@@ -328,6 +328,15 @@ namespace CST_465_Project {
         protected global::System.Web.UI.WebControls.View uxSecondView;
         
         /// <summary>
+        /// uxImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image uxImage;
+        
+        /// <summary>
         /// lFirstName control.
         /// </summary>
         /// <remarks>
@@ -407,15 +416,6 @@ namespace CST_465_Project {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal lZipcode;
-        
-        /// <summary>
-        /// uxImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image uxImage;
         
         /// <summary>
         /// uxEditProfile control.

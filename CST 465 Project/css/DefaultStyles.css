@@ -30,10 +30,16 @@ h2 {
 
 /*master page***************************************/
 #mpHeader{
+    color: #ffffff;
     background-color: #bc0404;
-    border-color: black;
     border: solid;
     border-width: 1px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: #000000;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
     padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -45,6 +51,8 @@ h2 {
     border-right: solid;
     border-bottom: solid;
     border-width: 1px;
+    border-left-width: 2px;
+    border-right-width: 2px;
     padding-top: .25em;
     padding-left: 1em;
     padding-right: 1em;
@@ -55,15 +63,23 @@ h2 {
     border-left: solid;
     border-right: solid;
     border-width: 1px;
+    border-left-width: 2px;
+    border-right-width: 2px;
     margin: 0px;
     padding-top: 1em;
     padding-left: 1em;
 }
 #mpFooter{
+    text-align: center;
     color: #393318;
     background-color: #fdc689;
     border: solid;
     border-width: 1px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
     padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -92,6 +108,36 @@ h2 {
     width: 10em;
     padding-top: .4em;
     padding-left: .4em;
+}
+.literal_label {
+    display: inline-block;
+    text-align: right;
+    width: 10em;
+    padding-top: .4em;
+    padding-left: .4em;
+}
+.inline_div {
+    display: inline-block;
+}
+.left_image {
+    line-height: 0;
+    display: inline-block;
+    float:left;
+    margin-right: 1em;
+    border: solid;
+    border-width: 2px;
+}
+.right_image {
+    line-height: 0;
+    display: inline-block;
+    float:right;
+    margin-right: 1em;
+    border: solid;
+    border-width: 2px;
+}
+.profile_image{
+    width:100%;
+    max-width:288px;
 }
 #login_status {
     position: absolute;
