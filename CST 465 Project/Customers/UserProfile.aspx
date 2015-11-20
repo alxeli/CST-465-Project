@@ -124,6 +124,9 @@
 
             <asp:Image ID="uxImage" runat="server" />
             <br />
+            
+            <asp:Button ID="uxEditProfile" Text="Edit Profile" runat="server" OnClick="uxEditProfile_Click" />
+            <br />
         </asp:View>
     </asp:MultiView>
     <br />

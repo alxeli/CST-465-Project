@@ -7,9 +7,10 @@ namespace CST_465_Project
 {
     public class UserProfileObject
     {
+        public Guid UserID { get; set; }
         public String FirstName { get; set; }
         public String LastName { get; set; }
-        public String Age { get; set; }
+        public int Age { get; set; }
         public String PhoneNumber { get; set; }
         public String Email { get; set; }
         public String Address { get; set; }

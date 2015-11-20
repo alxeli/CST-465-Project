@@ -14,11 +14,14 @@
     <form id="mpForm" runat="server">
         <div id="main_body">
             <header id="mpHeader">
+                <asp:ContentPlaceHolder ID="cLogo" runat="server">
+                    <asp:Image ID="Image1" CssClass="logo" ImageUrl="~/img/faster_food_logo_small.png" runat="server" />
+                </asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="cHeader" runat="server">
                     <h1>Master Page Header Default</h1>
                 </asp:ContentPlaceHolder>
-                <div id="login_status">                    
-                    <asp:LoginStatus ID="uxLoginStatus" runat="server"/>
+                <div id="login_status">
+                    <asp:LoginStatus ID="uxLoginStatus" runat="server"/> 
                 </div>
             </header>
 

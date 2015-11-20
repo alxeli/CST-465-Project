@@ -416,5 +416,14 @@ namespace CST_465_Project {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image uxImage;
+        
+        /// <summary>
+        /// uxEditProfile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button uxEditProfile;
     }
 }

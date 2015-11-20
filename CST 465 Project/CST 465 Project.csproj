@@ -83,6 +83,7 @@
     <Content Include="Customers\Login.aspx" />
     <Content Include="Customers\Register.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="img\faster_food_logo_small.png" />
     <Content Include="MidtermExam.aspx" />
     <Content Include="packages.config" />
     <Content Include="App_Master\BaseTemplate.Master" />
@@ -184,6 +185,7 @@
     <Compile Include="Code\ShortTextQuestion.cs" />
     <Compile Include="Code\TrueFalseQuestion.cs" />
     <Compile Include="Code\UserProfileObject.cs" />
+    <Compile Include="Code\UserProfileRepo.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -268,7 +270,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="img\" />
     <Folder Include="js\" />
     <Folder Include="Models\" />
   </ItemGroup>
