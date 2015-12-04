@@ -14,6 +14,7 @@
     -Alex
 ******************************************************************************/
 
+
 body {
     background-color: #FFF;
 }
@@ -85,7 +86,9 @@ h2 {
     padding-bottom: 1em;
 }
 #main_body {
-    width: 1004px;
+    width: 100%;
+    max-width: 1004px;
+    min-width: 320px;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -93,6 +96,16 @@ h2 {
     height: 100%;
     position: relative;
 }
+
+.col{  
+    width: 100%;  
+    box-sizing: border-box;  
+    padding:10px;
+}
+.contact{  
+    background-color: #fdf869;
+}
+
 .logo {
     position:absolute;
     width: 240px;
@@ -169,7 +182,9 @@ input[type=text].address_textbox {
 .blog_textbox {
     margin-top: 1em;
     height: 20em;
-    width: 25em;
+    width: 72em;
+    max-width: 72em;
+    max-height: 60em;
 }
 
 /*button*/
@@ -185,4 +200,9 @@ input[type=submit] {
     position:absolute;
     left: -1000px;
 
+}
+
+@media only screen and (min-width: 768px) {
+    .col_25 {width: 25%; float: left;}
+    .col_75 {width: 75%; float: left;}
 }

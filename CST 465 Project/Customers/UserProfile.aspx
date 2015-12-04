@@ -49,6 +49,7 @@
             <br />
             <asp:Label ID="lblConfirmEmailAddress" CssClass="right_label" AssociatedControlID="uxConfirmEmailAddress" Text="Confirm Email Address: " runat="server" />
             <asp:TextBox ID="uxConfirmEmailAddress" CssClass="email_textbox" runat="server" />
+            <asp:RequiredFieldValidator ID="vComfrimEmailAddress1" ControlToValidate="uxConfirmEmailAddress" ErrorMessage="Confirm Email Address Required" Text="*" runat="server" />
             <asp:CompareValidator ID="vConfirmEmailAddress" ControlToValidate="uxConfirmEmailAddress" ControlToCompare="uxEmailAddress" ErrorMessage="Confirmation Email Address Mismatch" Text="*" runat="server"/>
             <br />
 
@@ -79,7 +80,7 @@
                 OnServerValidate="vProfileImageUpload_ServerValidate" ClientValidationFunction="validateFile" ErrorMessage="Wrong Image Format" Text="*" runat="server" />
             <br />
             
-            <asp:Button ID="uxSaveProfile" Text="Save Profile" runat="server" OnClick="uxSaveProfile_Click" />
+            <asp:Button ID="uxSaveProfile" CausesValidation="true" Text="Save Profile" runat="server" OnClick="uxSaveProfile_Click" />
             <br />
 
             <asp:ValidationSummary ID="uxValidation" ShowMessageBox="true" ShowSummary="true" runat="server" />

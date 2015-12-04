@@ -13,6 +13,15 @@ namespace CST_465_Project {
     public partial class Blog {
         
         /// <summary>
+        /// dsBlog control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource dsBlog;
+        
+        /// <summary>
         /// uxLoginView control.
         /// </summary>
         /// <remarks>
