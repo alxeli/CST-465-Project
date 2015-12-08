@@ -1,6 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/App_Master/BaseTemplate.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CST_465_Project.Default1" %>
+
+<%@ Register Src="~/Code/FeaturedProducts.ascx" TagPrefix="uc1" TagName="FeaturedProducts" %>
+
+
+<%--<asp:Content ID="Content1" ContentPlaceHolderID="mpHead" runat="server">
+</asp:Content>--%>
+<asp:Content ID="Content2" ContentPlaceHolderID="cHeader" runat="server">
+    <h1>Faster Food</h1>
+</asp:Content>
+<%--<asp:Content ID="Content3" ContentPlaceHolderID="cNav" runat="server">
+</asp:Content>--%>
 <asp:Content ID="Content4" ContentPlaceHolderID="cContent" runat="server">
-    <div>
+
+    <uc1:FeaturedProducts runat="server" ID="FeaturedProducts" />
+
+    <%--<div>
         <asp:Label ID="lblName" AssociatedControlID="uxName" runat="server" Text="Name"></asp:Label>
         <asp:TextBox ID="uxName" runat="server"></asp:TextBox>
         <br />
@@ -48,5 +62,9 @@
         <br />
         <asp:Literal ID="uxEventOutput" runat="server"></asp:Literal>
         <br />
-    </div>
+    </div>--%>
 </asp:Content>
+
+<%--<asp:Content ID="Content5" ContentPlaceHolderID="cFooter" runat="server">
+</asp:Content>--%>
+

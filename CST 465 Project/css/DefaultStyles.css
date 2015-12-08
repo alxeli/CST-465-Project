@@ -67,8 +67,7 @@ h2 {
     border-left-width: 2px;
     border-right-width: 2px;
     margin: 0px;
-    padding-top: 1em;
-    padding-left: 1em;
+    padding: 1em;
 }
 #mpFooter{
     text-align: center;
@@ -121,6 +120,28 @@ h2 {
     width: 10em;
     padding-top: .4em;
     padding-left: .4em;
+}
+.top_right_label {
+    vertical-align: top;
+    display: inline-block;
+    text-align: right;
+    width: 10em;
+    padding-top: .8em;
+    padding-left: .4em;
+}
+.blog_textbox {
+    resize: none;
+    display: inline-block;
+    margin-top: .6em;
+    height: 15em;
+    width: 59em;
+}
+.description_textbox {
+    resize: none;
+    display: inline-block;
+    margin-top: .6em;
+    height: 8em;
+    width: 59em;
 }
 .literal_label {
     display: inline-block;
@@ -178,13 +199,6 @@ input[type=text].email_textbox {
 }
 input[type=text].address_textbox {
     width: 14em;
-}
-.blog_textbox {
-    margin-top: 1em;
-    height: 20em;
-    width: 72em;
-    max-width: 72em;
-    max-height: 60em;
 }
 
 /*button*/

@@ -16,12 +16,15 @@
         <asp:scriptmanager ID="smManager" runat="server"></asp:scriptmanager>
         <div id="main_body">
             <header id="mpHeader">
+
                 <asp:ContentPlaceHolder ID="cLogo" runat="server">
                     <asp:Image ID="Image1" CssClass="logo" ImageUrl="~/img/faster_food_logo_small.png" runat="server" />
                 </asp:ContentPlaceHolder>
+
                 <asp:ContentPlaceHolder ID="cHeader" runat="server">
                     <h1>Master Page Header Default</h1>
                 </asp:ContentPlaceHolder>
+
                 <div id="login_status">
                     <asp:LoginStatus ID="uxLoginStatus" runat="server"/> 
                 </div>
@@ -30,16 +33,23 @@
             <nav id="mpNav">
                 <asp:ContentPlaceHolder ID="cNav" runat="server">
                     <asp:SiteMapDataSource ID="dsSiteMap" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" runat="server" />
-                    <asp:Menu ID="uxMenu" DataSourceID="dsSiteMap" Orientation="Horizontal" BackColor="Transparent" RenderingMode="List" runat="server">
-                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
-                        <StaticHoverStyle BackColor="#ECC20F" ForeColor="#2C20A4" />
-                        <StaticSelectedStyle BackColor="#ECC20F" />
-                        <DynamicHoverStyle BackColor="red" ForeColor="#2C20A4" />
-                        <DynamicMenuStyle BackColor="red"  ForeColor="#756DC5"/>
-                        <DynamicSelectedStyle BackColor="Transparent" />
-                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
-                    </asp:Menu>
-                    <asp:SiteMapPath ID="uxSiteMapPath" PathSeparator=" -_- " BackColor="Transparent" runat="server" />
+                    
+                    <div style="border-bottom: solid; border-width: 1px;">
+                        <asp:Menu ID="uxMenu" DataSourceID="dsSiteMap" Orientation="Horizontal" BackColor="Transparent" RenderingMode="List" runat="server">
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticHoverStyle BackColor="#ECC20F" ForeColor="#2C20A4" />
+                            <StaticSelectedStyle BackColor="#ECC20F" />
+                            <DynamicHoverStyle BackColor="red" ForeColor="#2C20A4" />
+                            <DynamicMenuStyle BackColor="red"  ForeColor="#756DC5"/>
+                            <DynamicSelectedStyle BackColor="Transparent" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        </asp:Menu>
+                    </div>
+                    
+                    <div style="padding: .3em;">
+                        <asp:SiteMapPath ID="uxSiteMapPath" PathSeparator=" -_- " BackColor="Transparent" runat="server" />
+                    </div>
+
                 </asp:ContentPlaceHolder>
             </nav>
     
@@ -52,7 +62,7 @@
 
             <footer id="mpFooter">
                 <asp:ContentPlaceHolder ID="cFooter" runat="server">
-                    <a>FasterFood™</a>
+                    <a>FasterFood™ 2015</a>
                 </asp:ContentPlaceHolder>
             </footer>
         </div>

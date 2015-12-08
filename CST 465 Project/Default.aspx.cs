@@ -13,29 +13,29 @@ namespace CST_465_Project
         {
             if (Page.IsPostBack)
             {
-                uxIsPostBack.Text += "PostedBack<br />";
+                //uxIsPostBack.Text += "PostedBack<br />";
             }
         }
 
         protected void Page_Init(object sender, EventArgs e)
         {
-            uxEventOutput.Text = "OnInit<br />";
+            //uxEventOutput.Text = "OnInit<br />";
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            uxEventOutput.Text += "OnPreRender<br />";
+            //uxEventOutput.Text += "OnPreRender<br />";
         }
 
         protected void uxSubmit_Click(object sender, EventArgs e)
         {
-            uxEventOutput.Text += "Submitted: "
-                + uxName.Text + " "
-                + uxHobby.Text + " "
-                + uxBiography.Text + " "
-                + uxCoursePrefix.Text + " "
-                + uxCourseNumber.Text + " "
-                + uxCourseDescription.Text + "<br />";
+            //uxEventOutput.Text += "Submitted: "
+            //    + uxName.Text + " "
+            //    + uxHobby.Text + " "
+            //    + uxBiography.Text + " "
+            //    + uxCoursePrefix.Text + " "
+            //    + uxCourseNumber.Text + " "
+            //    + uxCourseDescription.Text + "<br />";
         }
     }
 }

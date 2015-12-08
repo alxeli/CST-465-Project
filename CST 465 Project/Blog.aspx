@@ -27,10 +27,8 @@
                             <asp:Label ID="lblTitle" AssociatedControlID="uxTitleBox" Text="Title: " CssClass="right_label" runat="server" />
                             <asp:TextBox ID="uxTitleBox" text='<%# Bind("Title") %>' runat="server" />
                             <br />
-                            <asp:Label ID="lblBody" AssociatedControlID="uxBodyBox" Text="Body: " CssClass="right_label" runat="server" />
-                            <br />
+                            <asp:Label ID="lblBody" AssociatedControlID="uxBodyBox" Text="Body: " CssClass="top_right_label" runat="server" />
                             <asp:TextBox ID="uxBodyBox" text='<%# Bind("Content") %>' TextMode="MultiLine" CssClass="blog_textbox" runat="server" />
-                            <br />
                             <asp:Button ID="uxSubmit" Text="Submit" CommandName="Insert" runat="server" />
                             <br />
                             <br />
